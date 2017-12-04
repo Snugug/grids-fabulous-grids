@@ -1,0 +1,24 @@
+---
+pages:
+  - title: CSS Grids
+    slides:
+      - intro.md
+  - slides:
+      - thanks.html
+---
+{% extends '_layout.html' %}
+
+{% from '_slide.html' import slide %}
+
+{%block content %}
+<main class="_stage">
+  {% for section in pages %}
+    <article class="_stage--group" {% if section.title %}data-title="{{section.title}}"{% endif %}>
+      {% for page in section.slides %}
+        {{ slide(page, section) }}
+      {% endfor %}
+    </article>
+  {% endfor %}
+</article>
+{% endblock %}
+
