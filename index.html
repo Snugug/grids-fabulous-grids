@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grids, Fabulous Grids!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/CodeFlask.js/0.1.1/codeflask.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  
+<main class="_stage">
+  
+    <article class="_stage--group" data-title="CSS Grids">
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  data-state="intro">
+  <div class="_stage--content">
+    <h1>Grids, Fabulous Grids!</h1>
+
+  </div>
+  
+  
+</section>
+
+
+      
+    </article>
+  
+    <article class="_stage--group" >
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <blockquote>
+  <p>The grid is an integral part of the book design. It’s not something that you see, physically. It’s just like underwear: You wear it, but it’s not to be exposed. So the grid is the underwear of the book.</p>
+  <footer><cite href="https://vimeo.com/64811872"><a href="https://vimeo.com/64811872">Massimo Vignelli</a></cite></footer>
+</blockquote>
+
+  </div>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <p>To understand how we best utilize CSS Grid in our design and development, let's take a look at the history of grids</p>
+
+  </div>
+  
+  
+</section>
+
+
+      
+    </article>
+  
+    <article class="_stage--group" >
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <h2>Print Grids</h2>
+
+  </div>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <h3>Pre-Graphic Design Grids</h3>
+
+<div class="fragment--stacked">
+  <img src="images/Villard-Diagram.gif">
+  <img src="images/vdh-0.jpg" class="fragment">
+  <img src="images/vdh-1.jpg" class="fragment">
+  <img src="images/vdh-2.jpg" class="fragment">
+  <img src="images/vdh-3.jpg" class="fragment">
+  <img src="images/vdh-4.jpg" class="fragment">
+  <img src="images/vdh-5.jpg" class="fragment">
+</div>
+
+
+  </div>
+  
+  <aside class="_stage--notes">
+    <ul>
+<li>Villard De Honnecourt, 13th Century architect,</li>
+<li>Divides straight line into logical, harmonious parts
+<ul>
+<li>Built on ratios</li>
+<li>Best on a fixed ratio of 2:3</li>
+</ul></li>
+</ul>
+
+  </aside>
+  
+  
+  <footer class="_stage--footnote">
+    <p><a href="http://retinart.net/graphic-design/secret-law-of-page-harmony/">Secret Law of Page Harmony</a>, <a href="https://99designs.com/blog/tips/history-of-the-grid-part-1/">History of the design grid</a></p>
+
+  </footer>
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <h3>Grids in Graphic Design</h3>
+
+<div class="fragment--stacked">
+  <img src="images/thirds.jpeg" class="fragment">
+  <img src="images/Brockman-lohse-grid.png" class="fragment">
+</div>
+
+
+  </div>
+  
+  <aside class="_stage--notes">
+    <ul>
+<li><p>Grids entered graphic design lexicon in Switzerland during WWI</p></li>
+<li><p>Asymmetry became a guiding principle to feel more natural</p>
+<ul>
+<li>Introduction of left-aligned text</li>
+<li>Asymmetry, like the rule of thirds in photography, makes content feel more dynamic and engaging</li>
+</ul></li>
+<li><p>Grids became entrenched in Graphic Design, even if they aren't always straight-forward</p>
+<ul>
+<li>Famous posters by Josef Muller Brockmann (left), Richard P. Lohse, Armin Hofmann and Alberto Longhi (right)</li>
+<li>Each conforms to a grid (each has a unique asymmetric grid)</li>
+</ul></li>
+</ul>
+
+  </aside>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <h4>A number page layout terms emerged from this time</h4>
+<dl>
+  <dt>Column</dt>
+  <dd>Area where content (often text) exists</dd>
+  <dt>Gutter</dt>
+  <dd>Space between columns</dd>
+  <dt>Rail</dt>
+  <dd>A thinner column (typically about half the width of the other columns) at the far left or far right of a page</dd>
+  <dt>Single column grid</dt>
+  <dd>One column of content, like in a typical book</dd>
+  <dt>Multi-column (vertical) grid</dt>
+  <dd>More that one column of content, like in a typical newspaper</dd>
+  <dt>Modular grid</dt>
+  <dd>A grid that involves about as many horizontal divisions as it does vertical ones, making for an especially flexible model of text and image arrangement</dd>
+  <dt class="fragment"><em>Bonus:</em> Span</dt>
+  <dd class="fragment">An area of content across more than one column</dd>
+</dl>
+
+  </div>
+  
+  
+  <footer class="_stage--footnote">
+    <p><a href="https://99designs.com/blog/tips/history-of-the-grid-part-1/">History of the Grid</a></p>
+
+  </footer>
+  
+</section>
+
+
+      
+    </article>
+  
+    <article class="_stage--group" >
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <h2>Web Grids</h2>
+
+  </div>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <p>Grids on the web have traditionally been hard for almost the precise opposite reasons print grids are easy</p>
+<ul>
+  <li class="fragment">Many and varied display sizes</li>
+  <li class="fragment">Variable content lengths, sizes, and types</li>
+</ul>
+
+  </div>
+  
+  <aside class="_stage--notes">
+    <ul>
+<li>Because of these problems, we've traditionally had to abandon vertical grids on the web * We also tried, for a while, to remove some of this variance by fixing the sizes of our sites</li>
+</ul>
+
+  </aside>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <p>In September of 2006, Cameron Moll discussed creating the <a href="http://www.cameronmoll.com/archives/001220.html">optimal website width for a 1024px resolution screen</a>.</p>
+<p class="fragment">In it, he discusses the need to move from <code>800x600</code> resolution to <code>1024x768</code></p>
+<p class="fragment">In it, he proposes using <code>960px</code> as the full-width of a site as "it’s slightly smaller than full width, and it’s divisible by 3, 4, 5, 6, 8, 10, 12, 15, and 16"</p>
+
+  </div>
+  
+  <aside class="_stage--notes">
+    <ul>
+<li>In the article, he doesn't actually recommend this as a fixed width site, but rather optimizing for that resolution</li>
+<li>A follow-up article that December, Gridding the 960, became the inspiration for the most influential web grid to date, the 960 Grid System</li>
+</ul>
+
+  </aside>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  data-state="960">
+  <div class="_stage--content">
+    <h2>960 Grid System</h2>
+<!-- <img src="images/960.gif" class="center" alt="960 Grid System"> -->
+
+  </div>
+  
+  <aside class="_stage--notes">
+    <ul>
+<li><p>First release was March of 2008</p></li>
+<li><p>960gs comes with 2 column layouts: 12 and 16 column, and does not have a vertical column, with 12 being the most widely used</p></li>
+<li><p>The premise was originally for rapid prototyping, although it does say that it would work equally well for production</p></li>
+<li><p>Markup relied heavily on nesting of divs, with creator Nathan Smith taking a strong stance that semantics were not in class names or div nesting, but in the actual tags used and content in the tags</p>
+<ul>
+<li>He's right there, but it also led to lots of messy, hard-to-follow markup</li>
+</ul></li>
+<li><p>It was a big hit because it included not only CSS, but templates in all of the major graphic editors at the time</p></li>
+<li><p>…Then, on May 25, 2010, Ethan Marcotte released his A List Apart article &quot;Responsive Web Design&quot; and static grids had to be rethought</p></li>
+</ul>
+
+  </aside>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <img src="images/bootstrap.svg" style="max-width: 215px;" class="half">
+<img src="images/zurb.webp" style="max-width: 180px;" class="half">
+
+  </div>
+  
+  <aside class="_stage--notes">
+    <ul>
+<li>In August and September of 2011, Twitter Bootstrap and Zurb Foundation had their first respective releases</li>
+<li>Both came with a 12 column 960-based grid that replicated its functionality (both in markup and class structure).</li>
+<li>All of these grids were based on <code>float</code> layout models. In 2012, though, we got a new layout model to work with; flexbox.
+<ul>
+<li>This is the &quot;tweener&quot; syntax, the first implementation of the final syntax, unprefixed, would show up in 2013</li>
+</ul></li>
+</ul>
+
+  </aside>
+  
+  
+</section>
+
+
+      
+    </article>
+  
+    <article class="_stage--group" >
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <h2>Grids, Flexbox, and Floats. Oh My!</h2>
+
+  </div>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <p>When it comes to layout performance, <a href="https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing">Flexbox is faster than Float</a> for the render engine to lay out a page</p>
+<p class="fragment">With browser-defaults, <a href="https://blogs.igalia.com/jfernandez/2015/06/24/performance-on-grid-layout/">CSS Grid is faster than Flexbox</a> to lay out a page</p>
+
+  </div>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <img src="images/grid-vs-flexbox.svg">
+
+  </div>
+  
+  <aside class="_stage--notes">
+    <ul>
+<li><p>Float</p>
+<ul>
+<li>No direct layout control</li>
+<li>Pushes items either towards the left or the right for indirect layout control</li>
+<li>No built-in concept of spacing</li>
+</ul></li>
+<li><p>Flexbox</p>
+<ul>
+<li>Lays out items in one dimension</li>
+<li>Size and position based on content size</li>
+<li>Cannot control positioning in more that one direction</li>
+<li>No built-in concept of spacing</li>
+</ul></li>
+<li><p>Grids</p>
+<ul>
+<li>Lays out items in two dimensions</li>
+<li>Set constraints for size and position</li>
+<li>Can directly control positioning in each direction</li>
+<li>Has a built-in concept of spacing</li>
+</ul></li>
+</ul>
+
+  </aside>
+  
+  
+  <footer class="_stage--footnote">
+    <p><a href="http://maddesigns.de/css-grids/#/">Sven Wolfermann, Grids &amp; Glory</a></p>
+
+  </footer>
+  
+</section>
+
+
+      
+    </article>
+  
+    <article class="_stage--group" >
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <h2>Creating Grids</h2>
+
+  </div>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <p><strong>Columns and Rows</strong></p>
+<ul>
+  <li class="fragment">Content areas running across the view are <em>columns</em></li>
+  <li class="fragment">Content areas running down the view are <em>rows</em></li>
+  <li class="fragment">Grids must have at least one column and one row</li>
+</ul>
+
+  </div>
+  
+  <aside class="_stage--notes">
+    <ul>
+<li><p>When choosing the content areas, there is a balance that needs to be made between flexibility and constraints</p>
+<ul>
+<li>A symmetric grid, where each content area is the same size offers greater flexibility but fewer constraints</li>
+<li>An asymmetric grid, where content areas are of different sizes, offer greater constraints with less flexibility</li>
+</ul></li>
+<li><p>Constraints are good!</p>
+<ul>
+<li>Simpler grids with less possible variations lead to cleaner hierarchies for content</li>
+<li>Too many options leads to over-thinking layouts! The goal of a grid system is to minimize the thought processes to keep your mind free to find more creative opportunities for expression</li>
+<li>Using asymmetrical, uneven content areas, much like the rule of thirds, allows for more dynamic, engaging layouts that fir the needs of your imagery, text, or whatever else</li>
+<li>Less options also means less to adjust for responsive design, allowing hierarchy and compositions to scale more fluidly</li>
+</ul></li>
+</ul>
+
+  </aside>
+  
+  
+  <footer class="_stage--footnote">
+    <p><a href="https://gridsetapp.com/blog/gridset-sketch-guides/">Breaking out of the 12 column rut</a></p>
+
+  </footer>
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <p><strong>Gutters</strong></p>
+<ul>
+  <li class="fragment">Called <code>gap</code> in CSS Grids</li>
+  <li class="fragment">Space between each content area</li>
+  <li class="fragment">Gutters are all always the same size, although columns and rows can have different gutters</li>
+</ul>
+
+  </div>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <p><strong>Span</strong></p>
+<ul>
+  <li class="fragment">Spanning is how you attach a content to a column or row</li>
+  <li class="fragment">Spanning more than one column or row also spans the gutter separating those columns or rows</li>
+</ul>
+
+  </div>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <blockquote>
+  <p>The most flexible grid – giving us the most possibilities for layout – would be a column for every pixel right? How useless would that be? Flexibility is not solely what we seek in a grid system. We want a harmonious and meaningful utilization of space to house our content. This includes proportions between elements, as well as the proportions of negative space. Columns are a crutch. Less columns means less options for layout, reinforcing structure, creating a stronger content hierarchy, and therefore improving the overall clarity of communication.</p>
+  <footer><cite><a href="http://artequalswork.com/posts/design-your-grid.php">Nathan Ford -
+Don’t just choose a grid. Design it!</a></cite></footer>
+</blockquote>
+
+  </div>
+  
+  
+</section>
+
+
+      
+    </article>
+  
+    <article class="_stage--group" >
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <h2>CSS Grids</h2>
+
+  </div>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <p><strong>Grid Markup</strong></p>
+<pre><code class="language-markup">&lt;Grid&gt;
+  &lt;Grid-Item&gt;&lt;/Grid-Item&gt;
+  &lt;Grid-Item&gt;&lt;/Grid-Item&gt;
+  &lt;Grid-Item&gt;&lt;/Grid-Item&gt;
+&lt;/Grid&gt;</code></pre>
+
+  </div>
+  
+  <aside class="_stage--notes">
+    <ul>
+<li>CSS Grid markup is pretty flat. You have a parent element that has the grid definition on it, and that grid definition applies to its direct children and <em>only</em> its direct children</li>
+<li>The grid definition can contain columns and rows, and the items can be arranged anywhere on their parent's grid</li>
+</ul>
+
+  </aside>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <p><strong>Defining a Grid</strong></p>
+<ul>
+  <li class="fragment"><code>grid-template-columns</code> and <code>grid-template-rows</code> define the columns and rows for a grid: <code>grid-template-columns: 200px 300px 400px</code></li>
+  <li class="fragment">New units are available for defining templates! <code>fr</code>, <code>ch</code>, and <code>auto</code></li>
+  <li class="fragment">Sections of a template can be repeated with <code>repeat</code>: <code>grid-template-columns: repeat(12, 1fr)</code></li>
+  <li class="fragment">Templates can be based on constraints. <code>min</code>, <code>max</code>, <code>minax</code>: <code>grid-template-rows: minmax(2em, auto) auto;</code></li>
+  <li class="fragment">Gaps can be set either for the whole grid (<code>grid-gap</code>) or for columns and rows individually (<code>grid-column-gap</code> and <code>grid-row-gap</code>)</li>
+</ul>
+
+  </div>
+  
+  <aside class="_stage--notes">
+    <ul>
+<li><p>Units</p>
+<ul>
+<li><code>fr</code> - Fractional unit, 1 part of the available space</li>
+<li><code>ch</code> - Width, or more precisely the advance measure, of the &quot;0&quot; (zero, Unicode U+0030) in the element's font</li>
+<li><code>auto</code> - Maximum space needed for the content, or largest minimum size of items the items on its track (row/column)</li>
+</ul></li>
+<li><p>Constraints</p>
+<ul>
+<li><code>min</code> - Smallest the item can be</li>
+<li><code>max</code> - Largest the item can be</li>
+<li><code>minmax</code> - Constraint of small to large an item can be</li>
+</ul></li>
+</ul>
+
+  </aside>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <p><strong>Spanning a Grid</strong></p>
+<ul>
+  <li class="fragment"><code>grid-column</code> and <code>grid-row</code> allow a child of a grid to span its parent's grid</li>
+  <li class="fragment">Spanning can be <code>start / end</code>, <code>start / span</code>, or a single value <code>span</code> that will auto-place items spanning that number of columns or rows <ul>
+    <li class="fragment"><code>grid-column: 2 / span 3</code> will span 3 columns starting at the 2nd column</li>
+    <li class="fragment"><code>grid-row: span 2</code> will span 2 rows starting at the last row available</li>
+  </ul></li>
+</ul>
+
+  </div>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <p><strong>Areas</strong></p>
+<pre><code class="language-scss">.container {
+  display: grid;
+  grid-template-columns: 1fr minmax(1fr, 80ch) 1fr;
+  grid-template-rows: 2em auto auto;
+  grid-template-areas:
+    'header header header'
+    'left-side main right-side'
+    'footer footer footer';
+}
+
+.header {
+  grid-columns: header;
+}
+
+.main {
+  grid-columns: main;
+}
+</code></pre>
+
+  </div>
+  
+  <aside class="_stage--notes">
+    <ul>
+<li>Grid Areas allow for easier use and spanning of grid templates</li>
+</ul>
+
+  </aside>
+  
+  
+</section>
+
+
+      
+    </article>
+  
+    <article class="_stage--group" >
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <h2>Shh! Examples Now!</h2>
+
+  </div>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <p data-height="400" data-theme-id="dark" data-slug-hash="LOaavJ" data-default-tab="css,result" data-user="Snugug" data-embed-version="2" data-pen-title="Basic Grid" data-preview="true" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/Snugug/pen/LOaavJ/">Basic Grid</a> by Snugug (<a href="https://codepen.io/Snugug">@Snugug</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+  </div>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <p data-height="400" data-theme-id="dark" data-slug-hash="RjdOPz" data-default-tab="css,result" data-user="Snugug" data-embed-version="2" data-pen-title="Tryptic Grid" data-preview="true" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/Snugug/pen/RjdOPz/">Tryptic Grid</a> by Snugug (<a href="https://codepen.io/Snugug">@Snugug</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+  </div>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <p data-height="400" data-theme-id="dark" data-slug-hash="xPBerm" data-default-tab="css,result" data-user="Snugug" data-embed-version="2" data-pen-title="Auto-Fill Gallery" data-preview="true" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/Snugug/pen/xPBerm/">Auto-Fill Gallery</a> by Snugug (<a href="https://codepen.io/Snugug">@Snugug</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+  </div>
+  
+  
+</section>
+
+
+      
+    </article>
+  
+    <article class="_stage--group" >
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <h2>The Crazy Stuff</h2>
+
+  </div>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <p><strong>Card component laid out with Grid</strong></p>
+<p data-height="400" data-theme-id="dark" data-slug-hash="zPXBBK" data-default-tab="css,result" data-user="Snugug" data-embed-version="2" data-pen-title="Gridded Component" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/Snugug/pen/zPXBBK/">Gridded Component</a> by Snugug (<a href="https://codepen.io/Snugug">@Snugug</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+  </div>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <p><strong>Card Components laid out in a Flexible Gallery</strong></p>
+<p data-height="400" data-theme-id="dark" data-slug-hash="ooOLpq" data-default-tab="html,result" data-user="Snugug" data-embed-version="2" data-pen-title="CSS Grid RWD No MQ" data-preview="true" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/Snugug/pen/ooOLpq/">CSS Grid RWD No MQ</a> by Snugug (<a href="https://codepen.io/Snugug">@Snugug</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+  </div>
+  
+  
+</section>
+
+
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  >
+  <div class="_stage--content">
+    <p><strong>Flexbox Card Component laid out in a Flexible Gallery</strong></p>
+<p data-height="400" data-theme-id="dark" data-slug-hash="ooOzLJ" data-default-tab="css,result" data-user="Snugug" data-embed-version="2" data-pen-title="Full No MQ Responsiveness" data-preview="true" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/Snugug/pen/ooOzLJ/">Full No MQ Responsiveness</a> by Snugug (<a href="https://codepen.io/Snugug">@Snugug</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+  </div>
+  
+  
+</section>
+
+
+      
+    </article>
+  
+    <article class="_stage--group" >
+      
+        
+
+
+  
+
+
+
+
+<section  class="_stage--slide"  data-state="end">
+  <div class="_stage--content">
+    <h1 class="center">👍</h1>
+
+<p class="center">
+  <strong class="lowercase">http://snugug.github.io/magic-tricks-with-houdini</strong>
+</p>
+
+<ul>
+  <li><a href="http://jensimmons.com/post/feb-27-2017/learn-css-grid">Learning CSS Grid</a></li>
+  <li><a href="https://alistapart.com/article/content-out-layout">Content-out Layout</a></li>
+  <li><a href="http://artequalswork.com/posts/design-your-grid.php">Don't just choose a grid. Design it!</a></li>
+  <li><a href="https://gridsetapp.com/blog/primer/">Grids on the web: a primer</a></li>
+  <li><a href="https://99designs.com/blog/tips/history-of-the-grid-part-1/">History of the design grid</a></li>
+  <li><a href="http://www.cameronmoll.com/archives/2006/12/gridding_the_960/">Gridding the 960</a></li>
+  <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">A Complete Guide to Grid - CSS-Tricks</a></li>
+</ul>
+
+<br>
+
+  </div>
+  
+  
+</section>
+
+
+      
+    </article>
+  
+</article>
+
+</body>
+</html>
