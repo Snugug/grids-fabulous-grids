@@ -100,6 +100,13 @@ dd {
   }
 }
 
+.yes {
+  text-align: center;
+  font-size: 30vw;
+  margin-bottom: 0;
+  color: color('gold', 30);
+}
+
 // [data-state='topic'] {
 //   @include heading(color('teal', 10));
 //   color: black !important;
