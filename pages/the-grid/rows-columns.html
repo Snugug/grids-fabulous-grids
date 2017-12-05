@@ -1,0 +1,20 @@
+---
+notes: >
+  * Units
+    * `fr` - Fractional unit, 1 part of the available space
+    * `ch` - Width, or more precisely the advance measure, of the "0" (zero, Unicode U+0030) in the element's font
+    * `auto` - Maximum space needed for the content, or largest minimum size of items the items on its track (row/column)
+
+  * Constraints
+    * `min` - Smallest the item can be
+    * `max` - Largest the item can be
+    * `minmax` - Constraint of small to large an item can be
+---
+<p><strong>Defining a Grid</strong></p>
+<ul>
+  <li class="fragment"><code>grid-template-columns</code> and <code>grid-template-rows</code> define the columns and rows for a grid: <code>grid-template-columns: 200px 300px 400px</code></li>
+  <li class="fragment">New units are available for defining templates! <code>fr</code>, <code>ch</code>, and <code>auto</code></li>
+  <li class="fragment">Sections of a template can be repeated with <code>repeat</code>: <code>grid-template-columns: repeat(12, 1fr)</code></li>
+  <li class="fragment">Templates can be based on constraints. <code>min</code>, <code>max</code>, <code>minax</code>: <code>grid-template-rows: minmax(2em, auto) auto;</code></li>
+  <li class="fragment">Gaps can be set either for the whole grid (<code>grid-gap</code>) or for columns and rows individually (<code>grid-column-gap</code> and <code>grid-row-gap</code>)</li>
+</ul>

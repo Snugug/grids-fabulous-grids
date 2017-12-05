@@ -1,0 +1,23 @@
+---
+notes: >
+  * Grid Areas allow for easier use and spanning of grid templates
+---
+<p><strong>Areas</strong></p>
+<pre><code class="language-scss">.container {
+  display: grid;
+  grid-template-columns: 1fr minmax(1fr, 80ch) 1fr;
+  grid-template-rows: 2em auto auto;
+  grid-template-areas:
+    'header header header'
+    'left-side main right-side'
+    'footer footer footer';
+}
+
+.header {
+  grid-columns: header;
+}
+
+.main {
+  grid-columns: main;
+}
+</code></pre>
